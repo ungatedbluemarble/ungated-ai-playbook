@@ -1,4 +1,4 @@
-<svg viewBox="0 0 1000 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Ungated AI Playbook. An open standard for mature enterprise AI. Mathew J. Baldwin.">
+<svg viewBox="0 0 1000 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Ungated AI Playbook. An open standard for mature enterprise AI.">
 <style>
 .bg{fill:#FFFFFF;stroke:#DEDAD4;stroke-width:1.5}
 .p{fill:none;stroke:#B3261E;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
@@ -11,6 +11,6 @@
 <text class="title" x="60" y="108">The Ungated AI Playbook</text>
 <path class="p" d="M62 126 C240 120 420 129 600 123 C640 122 668 124 690 123"/>
 <text class="sub" x="60" y="168">An open standard for mature enterprise AI</text>
-<text class="by" x="60" y="214"><tspan font-weight="700">Mathew J. Baldwin</tspan><tspan fill="#5E5A55">  ·  November 2026</tspan></text>
+<text class="by" x="60" y="214"><tspan font-weight="700">Written in the open</tspan><tspan fill="#5E5A55">  ·  November 2026</tspan></text>
 <g transform="rotate(-3 760 210)"><text class="h" x="600" y="214">it doesn't have to be like this.</text></g>
 </svg>

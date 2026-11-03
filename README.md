@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="The Ungated AI Playbook. An open standard for mature enterprise AI, by Mathew J. Baldwin." width="100%">
+  <img src="assets/banner.svg" alt="The Ungated AI Playbook. An open standard for mature enterprise AI." width="100%">
 </p>
 
 <p align="center">
@@ -190,7 +190,7 @@ Review queues where someone approves every request fall apart at scale and quiet
 
 ## About the author
 
-**Mathew J. Baldwin** · Austin, Texas · US Marine veteran
+Austin, Texas · US Marine veteran
 
 I have worked in technology for more than twenty years, from IT and systems work through telecom operations to owning messaging platforms used in over 160 countries. For a long stretch I was the person responsible for knowing the messaging rules across 15+ jurisdictions, which is where my habit of building the rules in first comes from.
 
@@ -222,7 +222,7 @@ I am not a vendor, and I am not selling a platform. If you want help, it looks l
 
 I am always glad to talk with leaders, recruiters, and teams who see AI as a long-term capability worth building well.
 
-**LinkedIn:** [linkedin.com/in/mathewjbaldwin](https://www.linkedin.com/in/mathewjbaldwin)
+**[Find me on LinkedIn](https://www.linkedin.com/in/mathewjbaldwin)**
 
 ---
 
@@ -232,4 +232,4 @@ I am always glad to talk with leaders, recruiters, and teams who see AI as a lon
 - AI chip design startups raising large rounds: [Built In on Cognichip](https://builtin.com/articles/cognichip-raises-60m-series-a-20260403) and [Pulse on Ricursive](https://www.pulse.bot/ai/deals/ricursive-raises-335m-to-develop-end-to-end-ai-model-for-chip-design-03690f15-ef55-4867-8304-517a027aacd9/).
 - Cost per completed task as a routing principle: [Task-to-Model Optimization for Enterprise LLM Coding Assistants](https://arxiv.org/pdf/2608.08528), PayPal engineering researchers.
 
-<sub>Mathew J. Baldwin · Austin, Texas · Last updated November 2026</sub>
+<sub>Austin, Texas · Last updated November 2026</sub>
