@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An open standard for mature enterprise AI: why most companies do it the expensive way, and how to build the capability yourself. By Mathew J. Baldwin.">
+<meta property="og:title" content="The Ungated AI Playbook">
+<meta property="og:description" content="Most enterprises are doing AI the expensive way. It doesn't have to be like this.">
+<meta property="og:type" content="article">
+<title>Ungated AI Playbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&display=swap">
+<style>
+/* One reading column, like a practitioner's own site. A single serif family, a red editing pen for
+   notes and sketches, plain white paper. No cards, no tiles, no labels pretending to be structure. */
+:root{
+  --paper:#FFFFFF; --ink:#1C1B1A; --soft:#5E5A55; --line:#DEDAD4; --pen:#B3261E; --wash:#F6F4F1;
+  --serif:"Literata",Georgia,"Times New Roman",serif;
+  --hand:"Caveat","Segoe Print","Bradley Hand",cursive;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#161514; --ink:#ECE8E2; --soft:#A8A29A; --line:#34312D; --pen:#FF8A7A; --wash:#1E1C1A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#161514; --ink:#ECE8E2; --soft:#A8A29A; --line:#34312D; --pen:#FF8A7A; --wash:#1E1C1A; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+img{max-width:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:1.125rem;line-height:1.7;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main,header.site,footer{max-width:41rem;margin:0 auto}
+a{color:var(--ink);text-decoration-color:var(--pen);text-decoration-thickness:1.5px;text-underline-offset:3px}
+a:hover{color:var(--pen)}
+a:focus-visible{outline:2px solid var(--pen);outline-offset:3px}
+p{margin:0 0 1.15em}
+h1,h2,h3{font-family:var(--serif);text-wrap:balance;margin:0}
+h1{font-size:clamp(2rem,5.5vw,2.75rem);line-height:1.15;font-weight:700;margin-bottom:1.25rem;letter-spacing:-0.01em}
+h2{font-size:1.6rem;line-height:1.25;font-weight:700;margin:3.5rem 0 1rem}
+h3{font-size:1.2rem;line-height:1.3;font-weight:600;margin:2.25rem 0 .5rem}
+em{font-style:italic}
+strong{font-weight:600}
+
+header.site{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.5rem 1.5rem;padding-block:1.75rem 0;font-size:1rem}
+header.site .name{font-weight:600}
+header.site nav{display:flex;gap:1.25rem;flex-wrap:wrap;color:var(--soft)}
+header.site nav a{color:var(--soft);text-decoration:none}
+header.site nav a:hover{color:var(--pen)}
+
+.opening{padding-top:3.5rem}
+.date{color:var(--soft);font-size:.95rem;margin-bottom:.75rem}
+.lead{font-size:1.25rem;line-height:1.6}
+
+.margin-note{font-family:var(--hand);color:var(--pen);font-size:1.45rem;line-height:1.2;transform:rotate(-1.5deg);display:block;margin:-.25rem 0 1.5rem 1rem}
+
+blockquote{margin:2rem 0;padding:0 0 0 1.25rem;border-left:3px solid var(--pen);font-size:1.2rem;line-height:1.55}
+blockquote p{margin:0}
+
+.table-wrap{overflow-x:auto;margin:1.5rem 0 2rem}
+table{border-collapse:collapse;width:100%;min-width:30rem;font-size:1rem;line-height:1.45}
+th,td{text-align:left;vertical-align:top;padding:.7rem .9rem .7rem 0;border-bottom:1px solid var(--line)}
+thead th{font-weight:600;border-bottom:2px solid var(--ink)}
+tbody th{font-weight:600;width:22%;padding-right:1rem}
+td.bad{color:var(--soft)}
+
+.sketch{margin:1.75rem 0 2rem;overflow-x:auto}
+.sketch svg{display:block;width:100%;max-width:100%}
+.sketch .cap{font-size:.92rem;color:var(--soft);margin-top:.5rem}
+svg .s{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+svg .p{fill:none;stroke:var(--pen);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+svg .t{font-family:var(--serif);font-size:15px;fill:var(--ink)}
+svg .ts{font-family:var(--serif);font-size:13px;fill:var(--soft)}
+svg .h{font-family:var(--hand);font-size:21px;fill:var(--pen)}
+
+ul.plain{margin:0 0 1.15em;padding-left:1.1rem}
+ul.plain li{margin-bottom:.4rem}
+
+.sources{font-size:.92rem;color:var(--soft);border-top:1px solid var(--line);padding-top:1rem;margin-top:3rem}
+.sources p{margin-bottom:.5rem}
+.contact{background:var(--wash);padding:1.5rem 1.5rem .5rem;margin-top:1.5rem}
+footer{padding-block:2.5rem 3.5rem;color:var(--soft);font-size:.92rem}
+</style>
+</head>
+<body>
+<header class="site">
+  <span class="name">Mathew J. Baldwin</span>
+  <nav aria-label="Page">
+    <a href="#now">The problem</a>
+    <a href="#standard">The standard</a>
+    <a href="#me">About me</a>
+    <a href="#talk">Get in touch</a>
+  </nav>
+</header>
+
+<main>
+  <div class="opening">
+    <p class="date">The Ungated AI Playbook &middot; November 2026</p>
+    <h1>Most enterprises are doing AI the expensive way. It doesn't have to be like this.</h1>
+    <p class="lead">I've spent the last few years building AI programs inside real businesses, across every department I could get a seat with. What I've learned is that the right way to do this isn't secret, and it isn't something you need to buy. So I'm writing it down, in the open, for anyone who wants to use it.</p>
+  </div>
+
+  <h2 id="now">Where most companies are right now</h2>
+  <p>Walk into most enterprises today and you'll find the same pattern. Everything runs on the most powerful frontier model available, for every task, whether it needs it or not. Nobody benchmarked the alternatives. Nobody wrote down what a good result looks like. The bill arrives, it's bigger than anyone expected, and the plan is to cross their fingers and hope the value shows up.</p>
+  <p>The numbers back this up. In a 2026 survey of 700 engineering leaders, companies estimated they waste about a quarter of what they spend on AI. Half had no clear owner for those costs, and only about one in four had a solid way to measure what the spending was actually worth.</p>
+  <p>The second pattern worries me more. Companies that arrived late to AI are trying to buy their way back to the front. And they're increasingly buying from startups that want to do the company's own core work for them. Chip companies are being pitched AI that designs chips. Think about that. The people who know silicon best are being asked to rent that knowledge back from someone else.</p>
+  <blockquote><p>If AI is going to change how your core work gets done, your own people need to be the ones who know how to do it.</p></blockquote>
+  <p>None of this is a technology problem. It's a maturity problem, and it's fixable.</p>
+
+  <h2 id="standard">What mature looks like</h2>
+  <p>Here's the difference, side by side. Most organizations are somewhere in the left column. The goal is to move every row to the right.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col"></th><th scope="col">Crossing your fingers</th><th scope="col">The standard</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Model choice</th><td class="bad">The biggest model, for everything</td><td>Benchmarked for each stage of the work</td></tr>
+        <tr><th scope="row">Cost</th><td class="bad">Watched by the token, after the bill</td><td>Measured per finished task, planned up front</td></tr>
+        <tr><th scope="row">Proven work</th><td class="bad">Still on frontier prices forever</td><td>Moved to a stable local model</td></tr>
+        <tr><th scope="row">Vendors</th><td class="bad">A new AI subscription for each problem</td><td>Get the most from what you already own</td></tr>
+        <tr><th scope="row">Rules</th><td class="bad">Bad output caught after the fact</td><td>Built into the tools, applied before output</td></tr>
+        <tr><th scope="row">People</th><td class="bad">A few experts, everyone else waiting</td><td>Trained champions in every department</td></tr>
+        <tr><th scope="row">Ownership</th><td class="bad">Rented from a vendor</td><td>Held by your own team</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Before you buy anything</h2>
+  <p>The industry expects you to sign another contract. Before you do, answer a few honest questions.</p>
+  <div class="sketch" role="img" aria-label="A hand-drawn decision path. Do you have the talent today? If yes, build it yourself. If no, is budget the reason? If yes, run one small skunkworks project on tools you already pay for. If no, could your people do it with training? If yes, one cycle to train them, then one cycle of skunkworks.">
+    <svg viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg" style="min-width:520px">
+      <path class="s" d="M14 22 C90 19 170 21 236 23 C238 40 237 58 235 76 C160 78 90 77 15 75 C13 58 12 40 14 22 Z"/>
+      <text class="t" x="125" y="45" text-anchor="middle">Do you have the talent</text>
+      <text class="t" x="125" y="64" text-anchor="middle">to do this today?</text>
+      <path class="s" d="M238 49 C300 47 350 51 402 48"/><path class="s" d="M392 42 L403 48 L392 55"/>
+      <text class="h" x="318" y="38" text-anchor="middle">yes</text>
+      <text class="t" x="414" y="45">Build it yourself.</text>
+      <text class="ts" x="414" y="64">This playbook is your method.</text>
+
+      <path class="s" d="M124 78 C126 95 122 112 125 128"/><path class="s" d="M118 119 L125 130 L132 119"/>
+      <text class="h" x="140" y="108">no</text>
+      <path class="s" d="M16 132 C80 130 170 133 235 131 C237 148 236 166 234 184 C160 186 90 185 17 183 C15 166 14 149 16 132 Z"/>
+      <text class="t" x="125" y="155" text-anchor="middle">Is budget</text>
+      <text class="t" x="125" y="174" text-anchor="middle">the reason?</text>
+      <path class="s" d="M237 157 C300 160 350 155 402 158"/><path class="s" d="M392 151 L403 158 L392 164"/>
+      <text class="h" x="318" y="148" text-anchor="middle">yes</text>
+      <text class="t" x="414" y="154">Run one small skunkworks</text>
+      <text class="ts" x="414" y="173">project on tools you already pay for.</text>
+
+      <path class="s" d="M125 186 C123 203 127 220 124 236"/><path class="s" d="M117 227 L124 238 L131 227"/>
+      <text class="h" x="140" y="216">no</text>
+      <path class="s" d="M15 240 C90 238 170 241 236 239 C238 256 237 274 235 292 C160 294 90 293 16 291 C14 274 13 257 15 240 Z"/>
+      <text class="t" x="125" y="263" text-anchor="middle">Could your people do it</text>
+      <text class="t" x="125" y="282" text-anchor="middle">with training?</text>
+      <path class="s" d="M238 266 C300 263 350 268 402 265"/><path class="s" d="M392 258 L403 265 L392 272"/>
+      <text class="h" x="318" y="256" text-anchor="middle">yes</text>
+      <text class="t" x="414" y="262">One cycle to train them,</text>
+      <text class="t" x="414" y="281">one cycle of skunkworks.</text>
+      <path class="p" d="M408 292 C470 296 540 290 600 294"/>
+      <text class="h" x="470" y="320">this is where most should land</text>
+    </svg>
+    <p class="cap">A skunkworks project is a small, protected team given room to experiment. Run one inside your engineering group and it will surface the AI uses that fit your work faster than any vendor pitch.</p>
+  </div>
+  <p>If you do bring in outside help, it should teach, set things up, and leave. Anything else is just a new dependency.</p>
+
+  <h2>The standard, step by step</h2>
+  <p>This is the order I work in. None of it requires a particular vendor, and all of it works on Claude, Copilot, ChatGPT, Gemini, or whatever your contracts already say you use.</p>
+
+  <h3>Start with what you already own</h3>
+  <p>Some companies choose their AI tools freely. Others inherit them through contracts they already hold. Either way, the first job is to learn that platform deeply and find what it does best for this particular business. Wishing for a different tool is not a strategy.</p>
+
+  <h3>Ask everyone the same questions</h3>
+  <p>The real problems live with department leaders, power users, and the experts who know a process inside out. I sit with them and ask the same core questions every time, so differences come from their answers and not from how I asked. When two leaders describe the same process differently, that disagreement is usually the most useful thing I learn all week.</p>
+
+  <h3>Put every team at one table</h3>
+  <p>Infrastructure, engineering, R&amp;D, security and AI specialists all think differently, and each one sees a risk the others miss. The decisions that stall most programs, like whether a tool runs on your own systems or in the cloud, or which automations are worth building, get settled faster when they're all in the room.</p>
+
+  <h3>Prepare before you prompt</h3>
+  <p>This applies to every team and every skill level, even when engineers find it tedious. Plan the work. Clean the data you'll feed the model so it only holds what the task needs. Write down what a good result looks like before you see any output. Then test several models against that, instead of trusting the first one that looks right.</p>
+
+  <h3>Use the right model for each stage</h3>
+  <p>Models are tools for stages of work, not one purchase. Here's how a solution should move from idea to something you run every day.</p>
+  <div class="sketch" role="img" aria-label="A hand-drawn line of five stages. Explore with the most capable models. Plan slowly with a lighter model. Execute with a strong model. Use the most powerful model only for short bursts. Settle proven work onto a stable local model. A note underneath says every stage is benchmarked against your own definition of a good result.">
+    <svg viewBox="0 0 660 210" xmlns="http://www.w3.org/2000/svg" style="min-width:560px">
+      <path class="s" d="M20 70 C150 66 300 73 450 68 C520 67 580 70 640 69"/>
+      <path class="s" d="M630 63 L641 69 L630 76"/>
+      <circle class="s" cx="50" cy="69" r="7"/><circle class="s" cx="180" cy="70" r="7"/><circle class="s" cx="310" cy="69" r="7"/><circle class="s" cx="440" cy="69" r="7"/>
+      <circle class="p" cx="580" cy="69" r="9"/>
+      <text class="t" x="50" y="44" text-anchor="middle">Explore</text>
+      <text class="t" x="180" y="44" text-anchor="middle">Plan</text>
+      <text class="t" x="310" y="44" text-anchor="middle">Execute</text>
+      <text class="t" x="440" y="44" text-anchor="middle">Burst</text>
+      <text class="t" x="580" y="44" text-anchor="middle">Settle</text>
+      <text class="ts" x="50" y="100" text-anchor="middle">most capable</text><text class="ts" x="50" y="117" text-anchor="middle">models</text>
+      <text class="ts" x="180" y="100" text-anchor="middle">lighter model,</text><text class="ts" x="180" y="117" text-anchor="middle">slow and careful</text>
+      <text class="ts" x="310" y="100" text-anchor="middle">strong model,</text><text class="ts" x="310" y="117" text-anchor="middle">most work ends here</text>
+      <text class="ts" x="440" y="100" text-anchor="middle">most powerful,</text><text class="ts" x="440" y="117" text-anchor="middle">short jobs only</text>
+      <text class="ts" x="580" y="100" text-anchor="middle">stable local</text><text class="ts" x="580" y="117" text-anchor="middle">model</text>
+      <path class="p" d="M30 150 C200 156 420 146 630 152"/>
+      <text class="h" x="330" y="185" text-anchor="middle">every stage is tested against your own idea of a good result</text>
+    </svg>
+  </div>
+  <p>In Claude terms, that might mean exploring with the top models, letting Sonnet plan over a few sessions, handing the plan to Opus to build, and saving Fable for short, demanding bursts. Every vendor has the same tiers under different names. And once something is proven, reliable and repeatable, stop paying frontier prices for it. Move it to a local model you control, tested the same way.</p>
+  <p>Cost gets judged by what gets finished, with failed attempts counted. A cheap model that needs four tries isn't cheap. When a team can show what AI delivered for what it cost, the conversation with leadership changes from "are we spending too much?" to "where do we invest next?"</p>
+
+  <h3>Build the rules into the tools</h3>
+  <p>You can't let people build with AI and also stop them from building. Review queues where someone approves every request fall apart at scale and quietly kill adoption. The better design puts the guardrails inside the tools people use, so the safe path is the easy one, and grounds each rule in requirements your business is actually bound by.</p>
+  <p>This comes from my years in messaging compliance. A message to someone who opted out shouldn't be blocked at the last second; the system shouldn't be able to draft it at all. The same thinking works everywhere: apply the rules before output, make every claim show its evidence, and when information is missing, stop and ask instead of guessing. Someone new to AI who gets one confident, wrong answer rarely comes back.</p>
+
+  <h3>Argue with ideas before you invest in them</h3>
+  <p>I test new ideas by running them past several AI perspectives at once and letting them argue until the weak spots show. It's a cheap way to stress an idea before it costs a team real time, and it's how most of what's on this page took shape.</p>
+
+  <h3>Grow your own people</h3>
+  <p>Lasting adoption comes from people who understand what they're doing. That means workshops shaped around each department, champions inside every team who can teach the people next to them, and tools that teach as they go. The goal is a company that keeps getting better at this long after any consultant has left.</p>
+
+  <h2 id="me">About me</h2>
+  <p>I've worked in technology for more than twenty years, from IT and systems work through telecom operations to owning messaging platforms used in over 160 countries. For a long stretch I was the person responsible for knowing the messaging rules across 15+ jurisdictions, which is where my habit of building the rules in first comes from. I'm also a US Marine veteran.</p>
+  <p>These days I build AI programs. I've led more than 200 AI workshops and helped over 1,500 people get genuinely comfortable with these tools. I design the systems, direct the builds, and make sure the teams I leave behind can run them.</p>
+
+  <h2 id="talk">How I can help</h2>
+  <p>I'm not a vendor, and I'm not selling a platform. If you want help, it looks like this: I'll find the people in your organization who already have the aptitude and help you form them into a team. I'll run the education cycle with your departments and set up champions. I'll lead your first skunkworks project alongside your engineers, benchmarked and costed properly. And I'll help you build guardrails and a model routing standard your own people can maintain. Then I step back.</p>
+  <div class="contact">
+    <p>I'm always glad to talk with leaders, recruiters, and teams who see AI as a long-term capability worth building well.</p>
+    <p><a href="https://www.linkedin.com/in/mathewjbaldwin">linkedin.com/in/mathewjbaldwin</a></p>
+  </div>
+
+  <div class="sources">
+    <p>Sources</p>
+    <p>AI spending waste and ownership figures: Harness, 2026 State of AI in FinOps survey of 700 engineering leaders, July 2026, as reported by <a href="https://letsdatascience.com/news/harness-report-finds-ai-spend-waste-f0a5fac5">Let's Data Science</a>. The figures are self-reported and the survey is vendor-sponsored.</p>
+    <p>AI chip design startups raising large rounds: <a href="https://builtin.com/articles/cognichip-raises-60m-series-a-20260403">Built In on Cognichip</a> and <a href="https://www.pulse.bot/ai/deals/ricursive-raises-335m-to-develop-end-to-end-ai-model-for-chip-design-03690f15-ef55-4867-8304-517a027aacd9/">Pulse on Ricursive</a>.</p>
+    <p>Cost per completed task as a routing principle: <a href="https://arxiv.org/pdf/2608.08528">Task-to-Model Optimization for Enterprise LLM Coding Assistants</a>, PayPal engineering researchers.</p>
+  </div>
+</main>
+
+<footer>Mathew J. Baldwin &middot; Austin, Texas &middot; Last updated November 2026</footer>
+</body>
+</html>
