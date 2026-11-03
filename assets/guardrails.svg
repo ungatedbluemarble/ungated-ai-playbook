@@ -1,0 +1,46 @@
+<svg viewBox="0 0 900 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A hand-drawn flow showing rules built into the tool. A request enters the tool, where rules are applied before any output. If information is missing, the tool stops and asks instead of guessing. If not, it produces output with the evidence shown. Example: if a recipient has opted out, the system cannot draft the message at all.">
+<style>
+.bg{fill:#FFFFFF;stroke:#DEDAD4;stroke-width:1.5}
+.s{fill:none;stroke:#1C1B1A;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.p{fill:none;stroke:#B3261E;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.t{font-family:Georgia,'Times New Roman',serif;font-size:16px;fill:#1C1B1A}
+.ts{font-family:Georgia,'Times New Roman',serif;font-size:12.5px;fill:#5E5A55}
+.h{font-family:'Segoe Print','Bradley Hand','Comic Sans MS',cursive;font-size:18px;fill:#B3261E}
+.hd{font-family:Georgia,'Times New Roman',serif;font-size:20px;font-weight:700;fill:#1C1B1A}
+</style>
+<rect class="bg" x="1" y="1" width="898" height="328" rx="12"/>
+<text class="hd" x="30" y="40">Rules live inside the tool, not in a review queue</text>
+
+<path class="s" d="M30 86 C70 83 130 88 170 85 C172 100 171 116 169 130 C130 133 70 131 31 129 C29 114 29 100 30 86 Z"/>
+<text class="t" x="100" y="114" text-anchor="middle">A request</text>
+
+<path class="s" d="M172 108 C190 106 205 110 222 108"/><path class="s" d="M213 102 L223 108 L213 115"/>
+
+<path class="s" d="M226 78 C300 75 390 80 450 77 C452 100 451 124 449 148 C380 151 290 149 227 146 C225 124 225 100 226 78 Z"/>
+<text class="t" x="338" y="102" text-anchor="middle">Rules applied inside the tool</text>
+<text class="ts" x="338" y="121" text-anchor="middle">grounded in what your business</text>
+<text class="ts" x="338" y="137" text-anchor="middle">is actually bound by</text>
+<text class="h" x="338" y="68" text-anchor="middle">before output</text>
+
+<path class="s" d="M452 112 C470 110 485 114 502 112"/><path class="s" d="M493 106 L503 112 L493 119"/>
+
+<path class="s" d="M506 82 C560 79 620 84 668 81 C670 100 669 120 667 142 C620 145 560 143 507 140 C505 120 505 100 506 82 Z"/>
+<text class="t" x="587" y="108" text-anchor="middle">Is information</text>
+<text class="t" x="587" y="128" text-anchor="middle">missing?</text>
+
+<path class="s" d="M670 112 C700 110 715 114 738 112"/><path class="s" d="M729 106 L739 112 L729 119"/>
+<text class="h" x="704" y="100" text-anchor="middle">no</text>
+<path class="s" d="M742 78 C790 75 840 80 872 77 C874 100 873 124 871 148 C830 151 780 149 743 146 C741 124 741 100 742 78 Z"/>
+<text class="t" x="807" y="104" text-anchor="middle">Output, with</text>
+<text class="t" x="807" y="124" text-anchor="middle">evidence shown</text>
+
+<path class="s" d="M587 144 C589 162 585 178 588 196"/><path class="s" d="M581 187 L588 198 L595 187"/>
+<text class="h" x="604" y="174">yes</text>
+<path class="p" d="M486 202 C540 199 640 205 690 201 C692 222 691 244 689 262 C630 265 540 263 487 260 C485 242 485 222 486 202 Z"/>
+<text class="t" x="588" y="228" text-anchor="middle">Stop and ask,</text>
+<text class="t" x="588" y="248" text-anchor="middle">never guess</text>
+
+<g transform="rotate(-1.5 190 260)"><text class="h" x="30" y="232">an opted-out recipient?</text></g>
+<g transform="rotate(-1.5 190 260)"><text class="h" x="30" y="256">the system can't draft the message at all.</text></g>
+<text class="ts" x="30" y="300">Review queues that approve every request fall apart at scale. The safe path has to be the easy one.</text>
+</svg>

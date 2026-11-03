@@ -1,0 +1,44 @@
+<svg viewBox="0 0 720 410" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A hand-drawn decision path. Do you have the talent today? If yes, build it yourself. If no, is budget the reason? If yes, run one small skunkworks project on tools you already pay for. If no, could your people do it with training? If yes, one cycle to train them, then one cycle of skunkworks. This is where most should land.">
+<style>
+.bg{fill:#FFFFFF;stroke:#DEDAD4;stroke-width:1.5}
+.s{fill:none;stroke:#1C1B1A;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.p{fill:none;stroke:#B3261E;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.t{font-family:Georgia,'Times New Roman',serif;font-size:15px;fill:#1C1B1A}
+.ts{font-family:Georgia,'Times New Roman',serif;font-size:13px;fill:#5E5A55}
+.h{font-family:'Segoe Print','Bradley Hand','Comic Sans MS',cursive;font-size:17px;fill:#B3261E}
+.hd{font-family:Georgia,'Times New Roman',serif;font-size:18px;font-weight:700;fill:#1C1B1A}
+</style>
+<rect class="bg" x="1" y="1" width="718" height="408" rx="12"/>
+<text class="hd" x="30" y="38">Before you buy anything</text>
+<g transform="translate(30,56)">
+<path class="s" d="M14 22 C90 19 170 21 236 23 C238 40 237 58 235 76 C160 78 90 77 15 75 C13 58 12 40 14 22 Z"/>
+<text class="t" x="125" y="45" text-anchor="middle">Do you have the talent</text>
+<text class="t" x="125" y="64" text-anchor="middle">to do this today?</text>
+<path class="s" d="M238 49 C300 47 350 51 402 48"/><path class="s" d="M392 42 L403 48 L392 55"/>
+<text class="h" x="318" y="38" text-anchor="middle">yes</text>
+<text class="t" x="414" y="45">Build it yourself.</text>
+<text class="ts" x="414" y="64">This playbook is your method.</text>
+
+<path class="s" d="M124 78 C126 95 122 112 125 128"/><path class="s" d="M118 119 L125 130 L132 119"/>
+<text class="h" x="140" y="108">no</text>
+<path class="s" d="M16 132 C80 130 170 133 235 131 C237 148 236 166 234 184 C160 186 90 185 17 183 C15 166 14 149 16 132 Z"/>
+<text class="t" x="125" y="155" text-anchor="middle">Is budget</text>
+<text class="t" x="125" y="174" text-anchor="middle">the reason?</text>
+<path class="s" d="M237 157 C300 160 350 155 402 158"/><path class="s" d="M392 151 L403 158 L392 164"/>
+<text class="h" x="318" y="148" text-anchor="middle">yes</text>
+<text class="t" x="414" y="154">Run one small skunkworks</text>
+<text class="ts" x="414" y="173">project on tools you already pay for.</text>
+
+<path class="s" d="M125 186 C123 203 127 220 124 236"/><path class="s" d="M117 227 L124 238 L131 227"/>
+<text class="h" x="140" y="216">no</text>
+<path class="s" d="M15 240 C90 238 170 241 236 239 C238 256 237 274 235 292 C160 294 90 293 16 291 C14 274 13 257 15 240 Z"/>
+<text class="t" x="125" y="263" text-anchor="middle">Could your people do it</text>
+<text class="t" x="125" y="282" text-anchor="middle">with training?</text>
+<path class="s" d="M238 266 C300 263 350 268 402 265"/><path class="s" d="M392 258 L403 265 L392 272"/>
+<text class="h" x="318" y="256" text-anchor="middle">yes</text>
+<text class="t" x="414" y="262">One cycle to train them,</text>
+<text class="t" x="414" y="281">one cycle of skunkworks.</text>
+<path class="p" d="M408 292 C470 296 540 290 600 294"/>
+<text class="h" x="408" y="320">where most should land</text>
+</g>
+</svg>

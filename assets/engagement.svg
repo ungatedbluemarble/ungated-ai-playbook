@@ -1,0 +1,30 @@
+<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A hand-drawn line of five stages for working together. Find and form your team from people with the aptitude. Run the education cycle with workshops and champions. Lead the first skunkworks project with your engineers, benchmarked and costed. Build guardrails and a model routing standard your team maintains. Then step back, and your team runs it.">
+<style>
+.bg{fill:#FFFFFF;stroke:#DEDAD4;stroke-width:1.5}
+.s{fill:none;stroke:#1C1B1A;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.p{fill:none;stroke:#B3261E;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.t{font-family:Georgia,'Times New Roman',serif;font-size:16px;fill:#1C1B1A}
+.tp{font-family:Georgia,'Times New Roman',serif;font-size:16px;font-weight:700;fill:#B3261E}
+.ts{font-family:Georgia,'Times New Roman',serif;font-size:12.5px;fill:#5E5A55}
+.h{font-family:'Segoe Print','Bradley Hand','Comic Sans MS',cursive;font-size:19px;fill:#B3261E}
+.hd{font-family:Georgia,'Times New Roman',serif;font-size:20px;font-weight:700;fill:#1C1B1A}
+</style>
+<rect class="bg" x="1" y="1" width="898" height="258" rx="12"/>
+<text class="hd" x="30" y="40">How an engagement runs</text>
+<path class="s" d="M40 108 C200 104 380 112 540 107 C650 105 730 108 800 107"/>
+<path class="s" d="M790 100 L801 107 L790 114"/>
+<circle class="s" cx="110" cy="107" r="9"/><circle class="s" cx="280" cy="108" r="9"/><circle class="s" cx="450" cy="107" r="9"/><circle class="s" cx="620" cy="108" r="9"/>
+<circle class="p" cx="820" cy="107" r="12"/>
+<text class="t" x="110" y="80" text-anchor="middle">Form</text>
+<text class="t" x="280" y="80" text-anchor="middle">Educate</text>
+<text class="t" x="450" y="80" text-anchor="middle">Prove</text>
+<text class="t" x="620" y="80" text-anchor="middle">Standardize</text>
+<text class="tp" x="820" y="76" text-anchor="middle">Step back</text>
+<text class="ts" x="110" y="146" text-anchor="middle">find the people with</text><text class="ts" x="110" y="163" text-anchor="middle">the aptitude, form them</text><text class="ts" x="110" y="180" text-anchor="middle">into a team</text>
+<text class="ts" x="280" y="146" text-anchor="middle">run the education</text><text class="ts" x="280" y="163" text-anchor="middle">cycle with each</text><text class="ts" x="280" y="180" text-anchor="middle">department, set up champions</text>
+<text class="ts" x="450" y="146" text-anchor="middle">lead the first skunkworks</text><text class="ts" x="450" y="163" text-anchor="middle">alongside your engineers,</text><text class="ts" x="450" y="180" text-anchor="middle">benchmarked and costed</text>
+<text class="ts" x="620" y="146" text-anchor="middle">guardrails and a model</text><text class="ts" x="620" y="163" text-anchor="middle">routing standard your</text><text class="ts" x="620" y="180" text-anchor="middle">people can maintain</text>
+<text class="ts" x="820" y="146" text-anchor="middle">your team runs it</text><text class="ts" x="820" y="163" text-anchor="middle">without me</text>
+<path class="p" d="M60 206 C250 212 500 202 840 208"/>
+<text class="h" x="450" y="240" text-anchor="middle">not a vendor, not a platform: the capability ends up yours</text>
+</svg>

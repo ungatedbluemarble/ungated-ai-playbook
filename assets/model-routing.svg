@@ -1,0 +1,31 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A hand-drawn line of five stages. Explore with the most capable models. Plan slowly with a lighter model. Execute with a strong model, where most work ends. Use the most powerful model only for short bursts. Settle proven work onto a stable local model. Every stage is tested against your own idea of a good result.">
+<style>
+.bg{fill:#FFFFFF;stroke:#DEDAD4;stroke-width:1.5}
+.s{fill:none;stroke:#1C1B1A;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.p{fill:none;stroke:#B3261E;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.t{font-family:Georgia,'Times New Roman',serif;font-size:15px;fill:#1C1B1A}
+.ts{font-family:Georgia,'Times New Roman',serif;font-size:13px;fill:#5E5A55}
+.h{font-family:'Segoe Print','Bradley Hand','Comic Sans MS',cursive;font-size:17px;fill:#B3261E}
+.hd{font-family:Georgia,'Times New Roman',serif;font-size:18px;font-weight:700;fill:#1C1B1A}
+</style>
+<rect class="bg" x="1" y="1" width="718" height="298" rx="12"/>
+<text class="hd" x="30" y="38">Right model, right stage</text>
+<g transform="translate(30,70)">
+<path class="s" d="M20 70 C150 66 300 73 450 68 C520 67 580 70 640 69"/>
+<path class="s" d="M630 63 L641 69 L630 76"/>
+<circle class="s" cx="50" cy="69" r="7"/><circle class="s" cx="180" cy="70" r="7"/><circle class="s" cx="310" cy="69" r="7"/><circle class="s" cx="440" cy="69" r="7"/>
+<circle class="p" cx="580" cy="69" r="9"/>
+<text class="t" x="50" y="44" text-anchor="middle">Explore</text>
+<text class="t" x="180" y="44" text-anchor="middle">Plan</text>
+<text class="t" x="310" y="44" text-anchor="middle">Execute</text>
+<text class="t" x="440" y="44" text-anchor="middle">Burst</text>
+<text class="t" x="580" y="44" text-anchor="middle">Settle</text>
+<text class="ts" x="50" y="100" text-anchor="middle">most capable</text><text class="ts" x="50" y="117" text-anchor="middle">models</text>
+<text class="ts" x="180" y="100" text-anchor="middle">lighter model,</text><text class="ts" x="180" y="117" text-anchor="middle">slow and careful</text>
+<text class="ts" x="310" y="100" text-anchor="middle">strong model,</text><text class="ts" x="310" y="117" text-anchor="middle">most work ends here</text>
+<text class="ts" x="440" y="100" text-anchor="middle">most powerful,</text><text class="ts" x="440" y="117" text-anchor="middle">short jobs only</text>
+<text class="ts" x="580" y="100" text-anchor="middle">stable local</text><text class="ts" x="580" y="117" text-anchor="middle">model</text>
+<path class="p" d="M30 150 C200 156 420 146 630 152"/>
+<text class="h" x="330" y="185" text-anchor="middle">every stage is tested against your own idea of a good result</text>
+</g>
+</svg>
